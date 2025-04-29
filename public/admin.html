@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>แดชบอร์ดแอดมิน</title>
+    <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+    <header>
+        <div class="logo">แดชบอร์ดแอดมิน</div>
+        <div class="user-info">
+            <span id="username"></span>
+            <button id="logout-btn">ออกจากระบบ</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="stats-container">
+            <div class="stat-card">
+                <h3>ผู้ใช้ทั้งหมด</h3>
+                <div id="total-users" class="stat-number">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>ผู้ใช้ออนไลน์</h3>
+                <div id="online-users" class="stat-number">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>ผู้ใช้พรีเมียม</h3>
+                <div id="premium-users" class="stat-number">0</div>
+            </div>
+        </div>
+
+        <div class="tables-container">
+            <div class="table-section">
+                <h2>ผู้ใช้ล่าสุด</h2>
+                <table id="recent-users">
+                    <thead>
+                        <tr>
+                            <th>ชื่อผู้ใช้</th>
+                            <th>วันที่สมัคร</th>
+                            <th>สถานะ</th>
+                        </tr>
+                    </thead>
+                    <tbody id="recent-users-body"></tbody>
+                </table>
+            </div>
+
+            <div class="table-section">
+                <h2>กิจกรรมล่าสุด</h2>
+                <table id="recent-activities">
+                    <thead>
+                        <tr>
+                            <th>เวลา</th>
+                            <th>กิจกรรม</th>
+                            <th>รายละเอียด</th>
+                        </tr>
+                    </thead>
+                    <tbody id="recent-activities-body"></tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/admin.js"></script>
+</body>
+</html>

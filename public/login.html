@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>เข้าสู่ระบบ - แอดมิน</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <form id="login-form">
+            <h2>เข้าสู่ระบบแอดมิน</h2>
+            <div class="form-group">
+                <label>ชื่อผู้ใช้</label>
+                <input type="text" name="username" required>
+            </div>
+            <div class="form-group">
+                <label>รหัสผ่าน</label>
+                <input type="password" name="password" required>
+            </div>
+            <button type="submit">เข้าสู่ระบบ</button>
+            <div id="error-message" class="error-message"></div>
+        </form>
+    </div>
+    <script src="/js/login.js"></script>
+</body>
+</html>
